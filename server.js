@@ -1,7 +1,7 @@
 var express = require("express");
 var path = require("path");
 var app = express();
-var PORT = 3006 || process.env.PORT;
+var PORT = process.env.PORT || 3006;
 var fs = require('fs');
 var notesJSON = require('./db/db.json');
 app.use(express.urlencoded({extended:true}));
